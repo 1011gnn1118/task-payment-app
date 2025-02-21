@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 
+# スマホ対応のレイアウト調整
+st.set_page_config(page_title="タスク報酬計算アプリ", layout="centered")
+
 # タイトル
 st.title("タスク報酬計算アプリ")
 
@@ -51,7 +54,7 @@ if input_text:
         result_df["合計報酬(JPY)"] = result_df["合計報酬(USD)"] * exchange_rate
         
         st.subheader("計算結果")
-        st.dataframe(result_df[["タスク名", "作業時間(秒)", "評価数", "報酬(USD)", "合計報酬(USD)", "合計報酬(JPY)"]])
+        st.dataframe(result_df[["タスク名", "作業時間(秒)", "評価数", "報酬(USD)", "合計報酬(USD)", "合計報酬(JPY)"]], use_container_width=True)
         
         total_usd = result_df["合計報酬(USD)"].sum()
         total_jpy = result_df["合計報酬(JPY)"].sum()
