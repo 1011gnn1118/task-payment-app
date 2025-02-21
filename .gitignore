@@ -7,3 +7,12 @@ task_env/
 *.log
 *.sqlite
 *.pkl
+__pycache__/
+*.pyc
+*.pyo
+.vscode/
+task_env/
+*.csv
+*.log
+*.sqlite
+*.pkl
