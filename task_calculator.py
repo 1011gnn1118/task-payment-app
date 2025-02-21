@@ -61,3 +61,4 @@ if input_text:
         
         st.subheader("総合計")
         st.write(f"**総合計報酬: {total_usd:.2f} USD / {total_jpy:.2f} JPY**")
+# Task Calculator Script
