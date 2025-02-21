@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.mp4
+*.zip
+*.tar.gz
+*.db
+*.sqlite3
+*.log
+*.pkl
+*.h5
